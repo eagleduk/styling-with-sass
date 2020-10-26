@@ -4,13 +4,16 @@ import "./Button.scss"
 
 // size: large, medium, small
 // color: blue, pink, gray
-function Button({ children, size, color, outline, fullWidth }) {
+function Button({ children, size, color, outline, fullWidth, ...rest }) {
     return (
         <button 
             className={classNames("Button", size, color, {
                 outline,
                 fullWidth
-        })}>
+                })
+            }
+            {...rest}
+        >
             {children}
         </button>
     )

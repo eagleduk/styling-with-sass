@@ -28,7 +28,11 @@ function App() {
       <div className="buttons">
         <Button size="large" fullWidth>Button</Button>
         <Button size="large" color="gray" fullWidth>Button</Button>
-        <Button size="large" color="pink" size="small" fullWidth>Button</Button>
+        <Button size="large" color="pink" size="small" fullWidth 
+          onClick={() => console.log("클릭")}
+          onMouseEnter={() => console.log("들어왔다.")}
+          onMouseOut={() => console.log("나갔다.")}
+        >Button</Button>
       </div>
     </div>
   );

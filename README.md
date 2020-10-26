@@ -12,3 +12,7 @@
 
 4. outline, fullwidth
 - property 가 boolean 일 경우는 값은 생략해도 인식이 된다.
+
+5. ...rest props 전달
+- 직접 선언한 parameter 이외의 parameter 에 대하여 객체 형태로 받을 수 있다.
+- 객체 형태를 element(component) 에 부여할 때에도 객체형태로 부여 가능하다.
