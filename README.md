@@ -16,3 +16,11 @@
 5. ...rest props 전달
 - 직접 선언한 parameter 이외의 parameter 에 대하여 객체 형태로 받을 수 있다.
 - 객체 형태를 element(component) 에 부여할 때에도 객체형태로 부여 가능하다.
+
+** css-module
+- yarn add react-icons => https://react-icons.github.io/react-icons/ 의 아이콘을 사용하게 만들어 준다.
+- classnames 와 혼합 사용 가능
+- class 명을 부여하기 번거로울때, 겹칠 수도 있는 상황에서 사용
+- react 에는 기본적으로 사용이 가능하다.
+- 파일 확장자를 .module.css 로 부여해야 한다.
+- react component 처럼 사용 가능
