@@ -1,4 +1,17 @@
 $blue: #228be6; // 주석!
+$gray: #495057;
+$pink: #f06595;
+
+@mixin button-color($color) {
+    background: $color;
+
+    &:hover {
+        background: lighten($color, 10%); // 색상 10% 밝게
+    }
+    &:active {
+        background: darken($color: $color, $amount: 10%); // 색상 10% 어둡게
+    }
+}
 
 .Button {
     display: inline-flex;
@@ -26,13 +39,16 @@ $blue: #228be6; // 주석!
         font-size: 0.875rem;
     }
     
-    background: $blue;
-
-    &:hover {
-        background: lighten($blue, 10%); // 색상 10% 밝게
+    &.blue {
+        @include button-color($blue);
     }
-    &:active {
-        background: darken($color: $blue, $amount: 10%); // 색상 10% 어둡게
+
+    &.gray {
+        @include button-color($gray);
+    }
+
+    &.pink {
+        @include button-color($pink);
     }
 
     // 자신과 자신이 연속으로 나오면 margin-left 를 부여
